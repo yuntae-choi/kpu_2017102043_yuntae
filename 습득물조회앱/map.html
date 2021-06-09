@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7af4f3df27644bf3b999f3eb43e54dd8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7af4f3df27644bf3b999f3eb43e54dd8" ></div>
+        
+</body>
+<script>    
+    
+            var map_7af4f3df27644bf3b999f3eb43e54dd8 = L.map(
+                "map_7af4f3df27644bf3b999f3eb43e54dd8",
+                {
+                    center: [37.4948875, 127.0627417],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 40,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9ced4074e79a46eb90e01270105914ac = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7af4f3df27644bf3b999f3eb43e54dd8);
+        
+    
+            var marker_bd8977285f8c44bb9d9ac76ba901ce1b = L.marker(
+                [37.4948875, 127.0627417],
+                {}
+            ).addTo(map_7af4f3df27644bf3b999f3eb43e54dd8);
+        
+    
+        var popup_432fcf16411a4f28bed8bc76d193d006 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00f61b286843442fa1c66960be7a4479 = $(`<div id="html_00f61b286843442fa1c66960be7a4479" style="width: 100.0%; height: 100.0%;">대치지구대</div>`)[0];
+            popup_432fcf16411a4f28bed8bc76d193d006.setContent(html_00f61b286843442fa1c66960be7a4479);
+        
+
+        marker_bd8977285f8c44bb9d9ac76ba901ce1b.bindPopup(popup_432fcf16411a4f28bed8bc76d193d006)
+        ;
+
+        
+    
+</script>
